@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LT2 Roastery - Cookies</title>
+    <link rel="stylesheet" href="cookies.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="penutup">
+      <header>
+        <div class="logo">
+          <img
+            src="https://ik.imagekit.io/bobezz/logo"
+            alt="LT2 Roastery Logo"
+            class="logo-img"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="product-section">
+        <div class="product-container">
+          <div class="product-image">
+            <img
+              src="https://ik.imagekit.io/royyan/cookies.png"
+              alt="Secangkir kopi dengan latte art"
+              class="coffee-cup"
+            />
+          </div>
+
+          <div class="product-details">
+            <h1 class="blend-title">Mathern Cookies</h1>
+
+            <p class="description-text">
+              Rich, Warm, and Meaningful—these cookies are made for those who
+              cherish every moment, as warm as a hug and as strong as a promise.
+            </p>
+
+            <p class="description-text">
+              Made with carefully selected, high-quality ingredients and baked
+              to a perfect golden brown, creating the ideal flavor balance
+              between a chewy center, crispy edges, and a hint of sweet dark
+              chocolate chips that linger in the heart.
+            </p>
+
+            <div class="best-for">
+              <p class="detail-heading">Best For:</p>
+              <p>
+                Accompaniment (Espresso, Americano, Latte), Quick Snack, Dessert
+              </p>
+            </div>
+
+            <div class="details-list">
+              <p class="detail-heading">Details:</p>
+              <ul>
+                <li>-The distinctive flavor of dark chocolate chips.</li>
+                <li>-Available in 250 gram, 500 gram.</li>
+              </ul>
+              <h3 class="prices">$8.99 / 250 gram.</h3>
+            </div>
+
+            <button class="buy-button" onclick="handleBuyClick()">
+              <i class="fas fa-shopping-basket"></i> Buy
+            </button>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script>
+      function handleBuyClick() {
+        // 1. Prompt untuk kuantitas
+        let kuantitas = prompt("Beli berapa bungkus? (contoh: 1)");
+
+        // Cek jika dibatalkan atau kosong
+        if (!kuantitas) {
+          alert("Pesanan dibatalkan.");
+          return;
+        }
+
+        // 2. Prompt untuk alamat
+        let alamat = prompt("Mohon masukkan alamat lengkap Anda:");
+
+        // Cek jika dibatalkan atau kosong
+        if (!alamat) {
+          alert("Pesanan dibatalkan.");
+          return;
+        }
+
+        // 3. Konfirmasi dan pesan pengiriman
+        // Menggunakan alert tunggal untuk hasil akhir
+        alert(`Terima kasih! Pesanan ${kuantitas} bungkus Anda sedang diproses.
+  Dikirim ke: ${alamat}
+  
+  Kopi sedang diantar!`);
+      }
+    </script>
+  </body>
+</html>

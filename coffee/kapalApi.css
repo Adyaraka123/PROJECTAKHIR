@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f7f0e6;
+  padding: 0;
+}
+
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.product-detail-page {
+  padding: 60px 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Container utama untuk 2 kolom (Flexbox) */
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Konten dimulai dari atas */
+  text-align: left;
+}
+
+/* Gaya Kolom Gambar (Kiri) */
+.product-image-col {
+  flex-basis: 45%;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.coffee-image-box {
+  width: 300px;
+  height: 300px;
+  /* Agar gambar cangkir terlihat penuh di tengah */
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  background-color: transparent;
+}
+
+.kapal-api-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Gaya Kolom Info (Kanan) */
+.product-info-col {
+  flex-basis: 55%;
+  padding-left: 40px;
+}
+
+/* Judul Produk */
+.product-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #382d24; /* Cokelat gelap */
+  margin-bottom: 20px;
+}
+
+.description-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #5d4d3f;
+  margin-bottom: 20px;
+}
+
+/* Gaya Detail dan Best For */
+.info-group {
+  margin-top: 25px;
+  color: #5d4d3f;
+}
+
+.info-title {
+  font-weight: bold;
+  color: #382d24;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Daftar Detail */
+.details-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.details-list li {
+  font-size: 15px;
+  color: #5d4d3f;
+  line-height: 1.8;
+}
+
+/* Tombol Beli */
+.buy-btn {
+  display: flex; /* Aktifkan Flexbox */
+  align-items: center; /* Posisikan ikon dan teks di tengah vertikal */
+  justify-content: center; /* Posisikan ikon dan teks di tengah horizontal (opsional, jika tombol lebar) */
+
+  background-color: #8c4c26;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  float: right; /* Posisikan di kanan bawah */
+  border-radius: 8px; /* Sudut sedikit melengkung */
+  transition: background-color 0.3s, box-shadow 0.2s;
+}
+
+.buy-btn:hover {
+  background-color: #5d3419;
+}
+
+.buy-btn .icon-buy {
+  margin-right: 5px;
+}

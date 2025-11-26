@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LT2 Roastery - Espresso Blend</title>
+    <link rel="stylesheet" href="/coffee/cupaloufa.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="penutup">
+      <header>
+        <div class="logo">
+          <img
+            src="https://ik.imagekit.io/bobezz/logo"
+            alt="LT2 Roastery Logo"
+            class="logo-img"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="product-section">
+        <div class="product-container">
+          <div class="product-image">
+            <img
+              src="https://ik.imagekit.io/royyan/cocholate.png"
+              alt="Secangkir kopi dengan latte art"
+              class="coffee-cup"
+            />
+          </div>
+
+          <div class="product-details">
+            <h1 class="blend-title">Cup a loufa</h1>
+
+            <p class="description-text">
+              Rich, Warm, and Meaningful. Our signature beverage is crafted to
+              indulge your senses, as warm as a hug and as strong as a promise
+              of happiness.
+            </p>
+
+            <p class="description-text">
+              A perfect blend of premium chocolate, crowned with a generous
+              mound of soft and creamy whipped cream. It is perfected with a
+              dusting of dark chocolate shavings and a cinnamon stick for a
+              final gourmet aroma and touch.
+            </p>
+
+            <div class="best-for">
+              <p class="detail-heading">Best For:</p>
+              <p>
+                A Warm Comfort on a chilly day Afternoon Indulgence as a dessert
+                replacement A Luxurious Weekend Treat
+              </p>
+            </div>
+
+            <div class="details-list">
+              <p class="detail-heading">Details:</p>
+              <ul>
+                <li>
+                  -Signature Flavor: Chocolate, Creamy, and Cinnamon Spice.
+                </li>
+                <li>
+                  -Available in 250 ml, 350 ml, and 500 ml sizes (estimated cup
+                  sizes).
+                </li>
+              </ul>
+              <h3 class="prices">$8.99 / 250 ml.</h3>
+            </div>
+
+            <button class="buy-button" onclick="handleBuyClick()">
+              <i class="fas fa-shopping-basket"></i> Buy
+            </button>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script>
+      function handleBuyClick() {
+        // 1. Prompt untuk kuantitas
+        let kuantitas = prompt("Beli berapa bungkus? (contoh: 1)");
+
+        // Cek jika dibatalkan atau kosong
+        if (!kuantitas) {
+          alert("Pesanan dibatalkan.");
+          return;
+        }
+
+        // 2. Prompt untuk alamat
+        let alamat = prompt("Mohon masukkan alamat lengkap Anda:");
+
+        // Cek jika dibatalkan atau kosong
+        if (!alamat) {
+          alert("Pesanan dibatalkan.");
+          return;
+        }
+
+        // 3. Konfirmasi dan pesan pengiriman
+        // Menggunakan alert tunggal untuk hasil akhir
+        alert(`Terima kasih! Pesanan ${kuantitas} bungkus Anda sedang diproses.
+  Dikirim ke: ${alamat}
+  
+  Kopi sedang diantar!`);
+      }
+    </script>
+  </body>
+</html>

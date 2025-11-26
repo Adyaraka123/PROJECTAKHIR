@@ -1,0 +1,372 @@
+/* Styling Umum */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #d69595; /* Latar belakang putih seperti di gambar */
+}
+
+.newmenu {
+  text-align: center;
+  color: #808080;
+  font-size: 2.5em;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  letter-spacing: 6px;
+  border: none;
+  background-color: #f7f7f7;
+  padding: 20px 20px 20px 10px;
+}
+.section-title {
+  margin-bottom: 40px;
+  font-size: 2em;
+  font-weight: 500;
+  color: #5c5c5c;
+  padding: 0 50px 0;
+}
+
+/* Wadah Carousel Utama */
+.carousel-container {
+  position: relative;
+  max-width: 1200px; /* Batasi lebar tampilan */
+  margin: 0 auto;
+  display: flex; /* Untuk menempatkan tombol di samping track */
+  align-items: center;
+}
+
+/* Wadah Item Kopi - Ini yang akan di-scroll */
+.carousel-track {
+  display: flex;
+  overflow-x: hidden; /* **PENTING:** Menyembunyikan item di luar wadah */
+  scroll-behavior: smooth; /* **PENTING:** Efek animasi sliding */
+  gap: 20px; /* Jarak antar item */
+  padding: 10px; /* Ruang di sekitar item */
+  flex-grow: 1; /* Agar mengambil sisa ruang */
+}
+
+.coffee-section {
+  padding-top: 50px;
+  background-color: white;
+}
+/* Styling Kartu Kopi */
+.coffee-item {
+  flex: 0 0 auto; /* Item tidak akan menyusut atau meluas, ukurannya tetap */
+  width: 250px; /* Lebar setiap kartu (sesuaikan) */
+  text-align: left;
+  margin-inline: 5px;
+}
+
+.coffee-img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.coffee-name {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #3e2f21;
+  font-weight: 600;
+}
+
+.coffee-desc {
+  color: #555;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.coffee-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coffee-price {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+/* Styling Tombol Order Now */
+.order-btn {
+  background-color: #333; /* Warna gelap */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.order-btn:hover {
+  background-color: #555;
+}
+
+/* Styling Tombol Navigasi */
+.nav-btn {
+  background: white;
+  border: 1px solid #ccc;
+  color: #333;
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute; /* Posisikan absolut di dalam container */
+  z-index: 10; /* Pastikan tombol di atas item */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-inline: -50px;
+}
+
+.prev-btn {
+  left: -20px; /* Posisikan sedikit di luar container */
+}
+
+.next-btn {
+  right: -20px; /* Posisikan sedikit di luar container */
+}
+
+/* Styling Kartu Kopi */
+.coffee-item {
+  flex: 0 0 auto;
+  width: 250px;
+  text-align: left;
+  cursor: pointer; /* Menunjukkan kartu bisa diklik/interaktif */
+  padding: 20px;
+
+  /* Tambahkan transisi pada properti yang mungkin berubah */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efek saat mouse mengarah ke kartu */
+.coffee-item:hover {
+  transform: translateY(-5px); /* Mengangkat kartu sedikit */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Memberikan bayangan halus */
+  border-radius: 20px;
+}
+
+/* Sedikit transisi pada tombol Order Now agar lebih halus */
+.order-btn {
+  /* ... properti lainnya ... */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.order-btn:hover {
+  background-color: #555;
+  transform: scale(1.05); /* Memperbesar sedikit saat disentuh */
+}
+
+/* Di file styles.css */
+.carousel-track {
+  /* ... properti lainnya ... */
+  overflow-x: hidden;
+  scroll-behavior: smooth; /* <--- INI ADALAH KUNCI ANIMASI GESER */
+  gap: 20px;
+  /* ... properti lainnya ... */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  padding: -10px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  padding-left: 60px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 100%;
+}
+
+.logo-text {
+  color: #20160f;
+  margin-right: auto;
+  font-weight: 500;
+}
+
+/* Gaya Menu Links */
+.nav-links {
+  list-style: none;
+  padding-right: 60px;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #ffcf4c;
+}
+
+.underline {
+  width: 5px;
+  height: 3px;
+  background-color: #ffc107;
+  padding: 0 0px 0px 100px;
+  margin: 0px 50px 0px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8; /* Latar belakang abu-abu muda */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Bagian Contact Header */
+.contact-section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.contact-header {
+  background-color: #6a3e2a; /* Warna cokelat gelap */
+  color: white;
+  text-align: center;
+  padding: 60px 20px; /* Padding atas dan bawah */
+}
+
+.contact-header .subtitle {
+  font-size: 0.9em;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  opacity: 0.8; /* Sedikit transparan */
+}
+
+.contact-header .title {
+  font-size: 3em; /* Ukuran besar untuk "CONTACT US" */
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Huruf kapital */
+  font-weight: bold;
+}
+
+.contact-header .underline {
+  width: 60px;
+  height: 4px;
+  background-color: white;
+  margin: 0 auto; /* Tengah secara horizontal */
+  border-radius: 2px;
+}
+
+/* Bagian Ikon Media Sosial */
+.social-links-container {
+  display: flex;
+  justify-content: center; /* Tengah secara horizontal */
+  align-items: center;
+  padding: 50px 20px;
+  flex-wrap: wrap; /* Agar item bisa wrap di layar kecil */
+  max-width: 1000px; /* Batasi lebar container */
+  margin: 0 auto; /* Tengah container */
+}
+
+.social-item {
+  display: flex;
+  flex-direction: column; /* Ikon di atas teks */
+  align-items: center; /* Tengah ikon dan teks */
+  padding: 0 30px; /* Jarak samping antar item */
+  text-decoration: none; /* Hapus garis bawah jika ini link */
+  color: inherit; /* Gunakan warna teks parent */
+}
+
+.social-item .icon {
+  font-size: 3em; /* Ukuran ikon */
+  margin-bottom: 15px;
+  color: #333; /* Warna ikon gelap */
+  transition: color 0.3s ease; /* Transisi warna saat hover */
+}
+
+.social-item .social-text {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Efek Hover pada Ikon */
+.social-item:hover .icon {
+  color: #6a3e2a; /* Warna cokelat saat hover */
+}
+
+/* Garis Pemisah Vertikal */
+.separator {
+  width: 1px;
+  height: 80px; /* Tinggi garis */
+  background-color: #ddd; /* Warna garis abu-abu */
+  margin: 0 10px; /* Jarak samping garis */
+}
+
+/* Footer */
+.main-footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #777;
+  font-size: 0.9em;
+  margin-top: 50px; /* Jarak dari konten di atasnya */
+  border-top: 1px solid #eee; /* Garis tipis di atas footer */
+  background-color: white;
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+  .contact-header .title {
+    font-size: 2.5em;
+  }
+
+  .social-links-container {
+    flex-direction: column; /* Susun vertikal di layar kecil */
+    gap: 30px; /* Jarak antar item saat vertikal */
+  }
+
+  .social-item {
+    padding: 0; /* Hapus padding samping */
+    width: 100%; /* Ambil lebar penuh */
+  }
+
+  .separator {
+    display: none; /* Sembunyikan pemisah di layar kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header {
+    padding: 40px 15px;
+  }
+  .contact-header .title {
+    font-size: 2em;
+  }
+  .social-item .icon {
+    font-size: 2.5em;
+  }
+}
