@@ -185,6 +185,7 @@ body {
   gap: 30px; /* Jarak antar kartu */
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 /* Gaya Kartu Produk Individu */
@@ -195,6 +196,19 @@ body {
   width: 30%; /* Setiap kartu mengambil sekitar 1/3 lebar */
   box-shadow: 15px 30px 1px rgba(0, 0, 0, 0.05); /* Bayangan lembut */
   text-align: left;
+}
+.semua-menu {
+  padding: 10px 30px 10px 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: #20160f;
+  width: 130px;
+  text-decoration: none;
+  color: white;
+  margin-left: 1200px;
+}
+.semua-menu hover {
+  background-color: red;
 }
 
 /* Gaya Area Gambar Produk */
