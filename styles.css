@@ -64,7 +64,6 @@ body {
   font-weight: 500;
 }
 
-/* Gaya Menu Links */
 .nav-links {
   list-style: none;
   padding-right: 60px;
@@ -86,12 +85,11 @@ body {
 }
 
 .hero-content {
-  /* Padding agar tidak menempel di navbar */
   padding-top: 190px;
   padding-left: 50px;
   width: 900px;
   text-align: left;
-  position: relative; /* Pastikan konten di atas gambar dan overlay */
+  position: relative;
   z-index: 2;
 }
 .hero-content .underline {
@@ -111,9 +109,7 @@ body {
 }
 
 .hero-content .highlight {
-  /* Warna oranye untuk highlight */
   color: white;
-
   padding-bottom: 5px;
   display: inline-block;
 }
@@ -126,7 +122,6 @@ body {
   color: #e0d9d0;
 }
 
-/* Gaya Tombol "Shop Now" */
 .shop-now-btn1 {
   background-color: #f7f0e6;
   color: black;
@@ -147,12 +142,11 @@ body {
 }
 
 .best-sellers-section {
-  background-color: #f7f0e6; /* Warna latar belakang krem/kuning muda */
-  padding: 80px 50px; /* Padding atas dan bawah */
+  background-color: #f7f0e6;
+  padding: 80px 50px;
   text-align: center;
 }
 
-/* Header Section (Judul dan Deskripsi) */
 .section-header {
   margin-bottom: 50px;
 }
@@ -178,23 +172,21 @@ body {
   color: black;
 }
 
-/* Container Produk (Menggunakan Flexbox) */
 .products-container {
   display: flex;
-  justify-content: center; /* Menengahkan kartu produk */
-  gap: 30px; /* Jarak antar kartu */
+  justify-content: center;
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 70px;
 }
 
-/* Gaya Kartu Produk Individu */
 .product-card {
-  background-color: white; /* Warna latar belakang kartu yang sedikit lebih terang */
-  border-radius: 15px; /* Sudut membulat */
+  background-color: white;
+  border-radius: 15px;
   padding: 20px;
-  width: 30%; /* Setiap kartu mengambil sekitar 1/3 lebar */
-  box-shadow: 15px 30px 1px rgba(0, 0, 0, 0.05); /* Bayangan lembut */
+  width: 30%;
+  box-shadow: 15px 30px 1px rgba(0, 0, 0, 0.05);
   text-align: left;
 }
 .semua-menu {
@@ -211,32 +203,23 @@ body {
   background-color: red;
 }
 
-/* Gaya Area Gambar Produk */
 .product-image {
-  background-color: rgba(
-    247,
-    247,
-    247,
-    1
-  ); /* Latar belakang untuk area gambar */
+  background-color: rgba(247, 247, 247, 1);
   border-radius: 20px;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  overflow: hidden; /* Penting untuk gambar */
+  overflow: hidden;
 }
 
-/* Gaya Gambar Kopi */
 .coffee-img {
-  /* Aturan untuk gambar yang akan Anda masukkan */
-  width: 200px; /* Gambar akan mengisi lebar container */
+  width: 200px;
   height: 200px;
-  object-fit: cover; /* Memastikan gambar terisi dengan baik tanpa terdistorsi */
+  object-fit: cover;
 }
 
-/* Detail Produk */
 .product-details h3 {
   font-size: 25px;
   color: #3e2f21;
@@ -250,7 +233,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s;
-  min-height: 40px; /* Tinggi minimum untuk deskripsi */
+  min-height: 40px;
   margin-bottom: 15px;
 }
 
@@ -258,7 +241,6 @@ body {
   color: #5d4d3f;
 }
 
-/* Bagian Bawah Kartu (Harga dan Tombol Keranjang) */
 .product-footer {
   display: flex;
   justify-content: space-between;
@@ -290,29 +272,25 @@ body {
 
 .delivery-section {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    /* Gradient hitam transparan */
-      url("https://ik.imagekit.io/orangtakdikenal/image%2019.png");
-  /* background-image: url("https://ik.imagekit.io/orangtakdikenal/coffee-4512564.jpg?updatedAt=1763016106814"); */
+    url("https://ik.imagekit.io/orangtakdikenal/image%2019.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 101vh;
 
-  color: white; /* Warna teks dasar putih */
+  color: white;
   padding: 50px;
   box-sizing: border-box;
 
-  /* Menggunakan Flexbox untuk menempatkan konten di kiri bawah */
   display: flex;
-  align-items: flex-end; /* Konten dijajarkan ke bawah (bottom) */
-  justify-content: flex-start; /* Konten dijajarkan ke kiri (start) */
+  align-items: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 
-/* Container Teks */
 .delivery-content {
   width: 600px;
-  padding-bottom: 20px; /* Jarak dari tepi bawah */
+  padding-bottom: 20px;
 }
 .delivery-content .underline {
   width: 200px;
@@ -321,7 +299,6 @@ body {
   margin: 0 0 30px;
 }
 
-/* Judul */
 .delivery-content h2 {
   font-size: 70px;
   font-weight: bold;
@@ -331,12 +308,10 @@ body {
   color: white;
 }
 
-/* Teks yang disorot (to Your Door) */
 .delivery-content .highlight-text {
-  color: #ffcf4c; /* Warna emas/kuning */
+  color: #ffcf4c;
 }
 
-/* Deskripsi */
 .delivery-content p {
   font-size: 20px;
   line-height: 1.4;
@@ -344,10 +319,9 @@ body {
 }
 
 .delivery-content p .p-highlight {
-  color: #ffcc66; /* Warna emas/kuning */
+  color: #ffcc66;
 }
 
-/* Tombol "Shop Now" */
 .shop-now-btn {
   background-color: #ffffff;
   color: black;
@@ -368,12 +342,11 @@ body {
 }
 
 .about-section {
-  background-color: #f7f0e6; /* Warna latar belakang krem/kuning muda */
+  background-color: #f7f0e6;
   padding: 135px 50px;
   text-align: center;
 }
 
-/* Header Section (Judul) */
 .about-header {
   margin-bottom: 40px;
 }
@@ -381,20 +354,17 @@ body {
 .about-header h2 {
   font-size: 30px;
   font-weight: 500;
-  color: #382d24; /* Warna teks cokelat gelap */
+  color: #382d24;
 }
 
-/* Sorotan warna cokelat untuk "Our Story" */
 .about-header .story-highlight {
-  color: #732d08; /* Warna cokelat yang lebih ringan */
+  color: #732d08;
   font-weight: 500;
 }
 
-/* Konten Paragraf */
 .about-content {
-  /* Membatasi lebar teks agar tidak terlalu panjang */
   max-width: 800px;
-  margin: 0 auto 40px auto; /* Menengahkan div dan menambahkan margin bawah */
+  margin: 0 auto 40px auto;
   line-height: 1.8;
   color: #382d24;
   text-align: center;
@@ -407,7 +377,6 @@ body {
   margin-left: -50px;
 }
 
-/* Teks Footer/Penutup */
 .about-footer .about-btn a {
   font-size: 30px;
   color: #8e5434;
@@ -416,58 +385,50 @@ body {
 }
 
 .special-section {
-  background-color: #fcf6ef; /* Warna latar belakang yang sangat terang (hampir putih) */
+  background-color: #fcf6ef;
   padding: 105px 50px;
   text-align: center;
 }
 
-/* Judul Section */
 .special-title {
   font-size: 35px;
   font-weight: 600;
-  color: #382d24; /* Cokelat gelap */
+  color: #382d24;
   margin-bottom: 50px;
 }
 
-/* Sorotan warna untuk tanda tanya */
 .special-title .title-highlight {
-  color: #f7b70b; /* Cokelat yang lebih ringan */
+  color: #f7b70b;
 }
 
-/* Container untuk 3 Fitur (Menggunakan Flexbox) */
 .features-container {
   display: flex;
-  justify-content: center; /* Menengahkan kolom fitur */
-  gap: 40px; /* Jarak antar fitur */
+  justify-content: center;
+  gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* Gaya untuk setiap kotak fitur */
 .feature-item {
-  flex-basis: 30%; /* Setiap item mengambil sekitar 30% lebar container */
+  flex-basis: 30%;
   padding: 20px;
 }
 
-/* Kotak untuk Ikon */
 .icon-box {
   margin: 0 auto 20px auto;
-  width: 80px; /* Ukuran container ikon */
+  width: 80px;
   height: 80px;
 }
 
-/* Gaya Gambar Ikon */
 .feature-icon {
-  /* Aturan untuk gambar yang akan Anda masukkan */
-  width: 100%; /* Ikon mengisi 100% dari .icon-box */
+  width: 100%;
   height: 100%;
-  object-fit: contain; /* Memastikan ikon terlihat utuh */
+  object-fit: contain;
 }
 .feature-icon img {
   width: 500px;
 }
 
-/* Judul Fitur */
 .feature-item h3 {
   font-size: 35px;
   color: #382d24;
@@ -477,44 +438,40 @@ body {
   letter-spacing: 2px;
 }
 
-/* Deskripsi Fitur */
 .feature-item p {
   font-size: 20px;
   line-height: 1.6;
   width: 400px;
-  color: #5d4d3f; /* Warna teks yang sedikit lebih lembut */
+  color: #5d4d3f;
 }
 
 .product-detail-section {
-  background-color: #f7f0e6; /* Warna latar belakang krem/kuning muda */
+  background-color: #f7f0e6;
   padding: 80px 50px;
 }
 
-/* Container utama untuk 2 kolom (Flexbox) */
 .product-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Menjajarkan konten vertikal di tengah */
+  align-items: center;
   max-width: 1000px;
   margin: 0 auto;
   text-align: left;
 }
 
-/* Gaya Kolom Gambar (Kiri) */
 .product-image-col {
-  flex-basis: 40%; /* Mengambil 40% lebar */
+  flex-basis: 40%;
   text-align: right;
   padding-right: 40px;
 }
 
 .coffee-image-box {
-  /* Gaya untuk membungkus gambar */
   width: 300px;
   height: 300px;
-  border-radius: 50%; /* Opsional: Jika ingin gambar benar-benar bulat */
+  border-radius: 50%;
   overflow: hidden;
   display: inline-block;
-  background-color: transparent; /* Pastikan area di luar gambar tidak terlihat */
+  background-color: transparent;
 }
 
 .espresso-img {
@@ -523,9 +480,8 @@ body {
   object-fit: cover;
 }
 
-/* Gaya Kolom Info (Kanan) */
 .product-info-col {
-  flex-basis: 400%; /* Mengambil 60% lebar */
+  flex-basis: 400%;
   padding-left: 100px;
 }
 
@@ -545,7 +501,6 @@ body {
   font-weight: 400;
 }
 
-/* Gaya Detail dan Best For */
 .info-group {
   margin-top: 30px;
 }
@@ -565,7 +520,7 @@ body {
 }
 
 .details-list {
-  list-style: none; /* Menghilangkan bullet point default */
+  list-style: none;
   padding-left: 0;
   margin-top: 5px;
 }
@@ -604,21 +559,19 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Lapisan gelap 40% */
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
-/* Judul Section (Pastikan di atas overlay) */
 .testimonial-title {
   font-size: 32px;
   font-weight: 600;
-  color: white; /* Teks putih di atas latar gelap */
+  color: white;
   margin-bottom: 40px;
   position: relative;
   z-index: 2;
 }
 
-/* Container untuk 3 Testimoni (Flexbox) */
 .testimonials-container {
   display: flex;
   gap: 30px;
@@ -628,29 +581,20 @@ body {
   z-index: 2;
 }
 
-/* Gaya Kartu Testimoni Individu */
 .testimonial-card {
-  /* Warna latar belakang cokelat gelap dengan transparansi */
-  background-color: rgba(
-    56,
-    45,
-    36,
-    0.8
-  ); /* Warna #382d24 dengan transparansi 80% */
+  background-color: rgba(56, 45, 36, 0.8);
   color: white;
-  flex: 1; /* Membuat semua kartu memiliki lebar yang sama */
+  flex: 1;
   padding: 65px;
   border-radius: 15px;
   text-align: center;
   padding-inline: 20px;
 }
 
-/* Ikon Profil */
 .profile-icon {
   width: 50px;
   height: 50px;
   margin: 0 auto 20px auto;
-  /* Anda mungkin perlu menambahkan border atau background di sini jika ikon tidak berwarna */
 }
 
 .profile-icon .icon-img {
@@ -660,15 +604,13 @@ body {
   border-radius: 100px;
 }
 
-/* Kutipan (Quote) */
 .quote {
-  font-style: normal; /* Menghilangkan italic jika ada */
+  font-style: normal;
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-/* Nama Pelanggan */
 .customer-name {
   font-weight: bold;
   font-size: 16px;
@@ -677,45 +619,40 @@ body {
 
 .blog-section {
   padding: 60px 50px;
-  background-color: transparent; /* Mengikuti background body: #f7f0e6 */
+  background-color: transparent;
   text-align: center;
 }
 .blog-section span {
   color: #f7b70b;
 }
 
-/* Judul Bagian Blog */
 .blog-section-title {
   font-size: 30px;
   font-weight: bold;
-  color: #8c4c26; /* Warna cokelat aksen */
+  color: #8c4c26;
   margin-bottom: 40px;
 }
 
-/* Container untuk 3 Kartu (Flexbox) */
 .blog-card-container {
   display: flex;
-  justify-content: center; /* Rata tengah */
-  gap: 30px; /* Jarak antar kartu */
+  justify-content: center;
+  gap: 30px;
   max-width: 1300px;
   margin: 20px auto;
 }
 
-/* Gaya untuk Setiap Kartu Blog */
 .blog-card {
-  flex-basis: calc(33.333% - 20px); /* 3 kartu dalam satu baris dengan jarak */
-  background-color: #e0d9d0; /* Warna background kartu krem muda (seperti gambar) */
+  flex-basis: calc(33.333% - 20px);
+  background-color: #e0d9d0;
   border-radius: 8px;
-  overflow: hidden; /* Penting agar gambar menutupi sudut */
+  overflow: hidden;
 
   padding-bottom: 20px;
-  text-align: left; /* Teks di dalam kartu rata kiri */
+  text-align: left;
 }
 
-/* Kotak Gambar */
 .card-image-box {
   width: 100%;
-  /* Rasio tinggi/lebar gambar agar terlihat konsisten */
   height: 200px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -724,16 +661,14 @@ body {
 .blog-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Pastikan gambar menutupi kotak tanpa distorsi */
+  object-fit: cover;
   transition: transform 0.3s;
 }
 
-/* Efek Hover (Opsional: memperbesar gambar) */
 .blog-card:hover .blog-img {
   transform: scale(1.05);
 }
 
-/* Judul di Dalam Kartu */
 .card-title {
   font-size: 18px;
   font-weight: bold;
@@ -741,7 +676,6 @@ body {
   margin: 0 20px 8px 20px;
 }
 
-/* Deskripsi di Dalam Kartu */
 .card-description {
   font-size: 14px;
   line-height: 1.5;
@@ -781,11 +715,10 @@ body {
   margin: 20px auto 0;
 }
 
-/* --- Social Links Styling --- */
 .social-links-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Item rata atas */
+  align-items: flex-start;
   padding: 20px 0 0 0;
 }
 
@@ -808,7 +741,7 @@ body {
 }
 
 .social-item:hover {
-  color: var(--header-bg-color); /* Warna hover */
+  color: var(--header-bg-color);
 }
 
 .social-item .icon {
@@ -818,7 +751,7 @@ body {
 }
 
 .social-item:hover .icon {
-  color: var(--header-bg-color); /* Ubah warna ikon saat hover */
+  color: var(--header-bg-color);
 }
 
 .social-item .social-label {
@@ -836,14 +769,12 @@ body {
   padding-top: 15px;
 }
 
-/* Garis Pemisah Vertikal */
 .separator {
   width: 1px;
   height: 140px;
   background-color: #f7b70b;
 }
 
-/* --- Copyright Bar --- */
 .copyright-bar {
   text-align: center;
   padding: 10px 20px 20px;
@@ -851,10 +782,9 @@ body {
   font-size: 0.8em;
 }
 
-/* Media Queries untuk Responsif */
 @media (max-width: 900px) {
   .social-links-container {
-    flex-direction: column; /* Susun vertikal di layar kecil */
+    flex-direction: column;
     gap: 30px;
   }
 
@@ -863,7 +793,7 @@ body {
   }
 
   .separator {
-    display: none; /* Sembunyikan pemisah di layar kecil */
+    display: none;
     height: 0;
   }
 }
@@ -871,15 +801,14 @@ body {
 .contact-container {
   max-width: 900px;
   margin: 0 auto;
-  position: relative; /* Diperlukan untuk menempatkan logo secara absolut */
+  position: relative;
 }
 
-/* Penempatan Logo di Kanan Atas */
 .contact-logo {
   position: absolute;
   top: 0;
   right: 0;
-  width: 80px; /* Sesuaikan ukuran logo */
+  width: 80px;
   height: 80px;
 }
 
@@ -889,65 +818,59 @@ body {
   object-fit: contain;
 }
 
-/* Judul Utama */
 .contact-title {
   font-size: 30px;
   font-weight: bold;
-  color: #732d08; /* Cokelat yang lebih ringan */
+  color: #732d08;
   margin-bottom: 5px;
 }
 
-/* Sub-judul */
 .contact-subtitle {
   font-size: 24px;
   font-weight: bold;
-  color: #382d24; /* Cokelat gelap */
+  color: #382d24;
   margin-top: 0;
   margin-bottom: 25px;
 }
 
-/* Deskripsi Pertanyaan */
 .contact-description {
   font-size: 16px;
   line-height: 1.5;
-  color: #732d08; /* Cokelat yang lebih ringan */
+  color: #732d08;
   margin-bottom: 30px;
   font-weight: bold;
 }
 
-/* Detail Kontak */
 .contact-details {
   font-size: 16px;
-  color: #382d24; /* Cokelat gelap */
+  color: #382d24;
   font-weight: bold;
   margin-bottom: 40px;
   line-height: 1.8;
 }
 
-/* Teks Copyright */
 .copyright-text {
   font-size: 14px;
-  color: #5d4d3f; /* Warna abu-abu kecokelatan */
+  color: #5d4d3f;
   margin-top: 20px;
-  border-top: 1px solid #e0d9d0; /* Garis pemisah tipis opsional */
+  border-top: 1px solid #e0d9d0;
   padding-top: 20px;
 }
 
-/* --- Gaya Dasar Galeri --- */
 .gallery-section {
   padding: 50px 200px;
   text-align: center;
-  background-color: #ffffff; /* Latar belakang putih */
+  background-color: #ffffff;
 }
 
 .header .moments {
-  color: #ffc107; /* Warna kuning pada "MOMENTS" */
+  color: #ffc107;
   font-size: 0.9em;
   margin-bottom: 5px;
 }
 
 .header .title {
-  color: #808080; /* Warna abu-abu pada "GALLERY" */
+  color: #808080;
   font-size: 2.5em;
   margin-top: 0;
   margin-bottom: 10px;
@@ -956,25 +879,20 @@ body {
 .header .underline {
   width: 50px;
   height: 3px;
-  background-color: #ffc107; /* Garis kuning */
+  background-color: #ffc107;
   margin: 0 auto 30px;
 }
 
 .gallery-grid {
   display: grid;
-  /* Membuat layout 6 kolom untuk tampilan desktop */
   grid-template-columns: repeat(6, 1fr);
-  gap: 15px; /* Jarak antar gambar */
+  gap: 15px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Penyesuaian untuk tampilan mobile */
-
-/* --- Efek Transisi Gambar Utama --- */
-
 .gallery-item {
-  overflow: hidden; /* Penting untuk memotong efek zoom yang keluar dari batas */
+  overflow: hidden;
   position: relative;
 }
 
@@ -982,80 +900,47 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  /* Transisi diterapkan pada properti transform (zoom) dan filter (grayscale/opacity) */
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
-/* ----------------------------------- */
-/* Tiga Jenis Transisi yang Berbeda */
-/* ----------------------------------- */
-
-/* 1. Efek Zoom In (Membesar) */
 .gallery-item:hover img {
-  transform: scale(1.1); /* Gambar membesar 10% */
-  filter: brightness(1.2); /* Sedikit lebih terang */
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
-/* 2. Efek Opacity (Transparansi) */
-/*
-.gallery-item:hover img {
-    opacity: 0.8; 
-}
-*/
-
-/* 3. Efek Zoom + Transformasi Ringan */
-/*
-.gallery-item:hover img {
-    transform: scale(1.05) rotate(1deg);
-    filter: grayscale(0%); 
-}
-/* ... (SEMUA GAYA GALERI SEBELUMNYA ADA DI SINI) ... */
-
-/* --- GAYA LIGHTBOX BARU --- */
-
-/* Latar Belakang Overlay (Penghalang) */
 .lightbox {
-  /* Sembunyikan lightbox secara default */
   display: none;
   position: fixed;
-  z-index: 100; /* Pastikan di atas semua elemen lain */
+  z-index: 100;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  /* Latar belakang transparan hitam */
   background-color: rgba(0, 0, 0, 0.9);
   overflow: auto;
-
-  /* Tambahkan Transisi untuk kemunculan yang halus */
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Tampilkan lightbox dengan opacity 1 saat aktif */
 .lightbox.show {
   display: block;
   opacity: 1;
 }
 
-/* Gambar di dalam lightbox */
 .lightbox-content {
   margin-top: 50px;
   margin-inline: auto;
   display: block;
   width: 100%;
   max-width: 700px;
-  /* Mulai dari posisi yang tersembunyi/kecil */
   transform: scale(0.8);
-  transition: transform 0.3s ease-out; /* Transisi untuk efek pop-in */
+  transition: transform 0.3s ease-out;
 }
 
-/* Efek pop-in saat lightbox ditampilkan */
 .lightbox.show .lightbox-content {
-  transform: scale(0.6); /* Membesar ke ukuran normal saat aktif */
+  transform: scale(0.6);
 }
 
-/* Tombol Tutup */
 .close-btn {
   position: absolute;
   top: 15px;
@@ -1078,30 +963,16 @@ body {
   width: 100%;
   height: auto;
   display: block;
-
-  /* 1. MENGATUR EFEK AWAL (GELAP) */
-  /* Filter brightness 50% akan membuat gambar terlihat redup atau gelap */
-  /* Anda bisa menyesuaikan nilainya (misal 30% untuk lebih gelap, 70% untuk sedikit gelap) */
   filter: brightness(30%);
-
-  /* 2. MENGATUR TRANSISI */
-  /* Membuat perubahan kecerahan dan zoom menjadi halus */
   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* 3. MENGATUR EFEK SAAT HOVER (MOUSE DIARAHKAN) */
 .gallery-item:hover img {
-  /* Filter brightness 100% mengembalikan kecerahan gambar ke normal (warna asli) */
   filter: brightness(100%);
-
-  /* Opsional: Tambahkan sedikit efek zoom agar lebih menarik */
   transform: scale(1.05);
 }
 
-/* ... (GAYA LAINNYA) ... */
-/* --- Gaya Dasar dan Latar Belakang --- */
 .blog-section {
-  /* Latar belakang yang mendekati warna gambar */
   background-color: white;
   padding: 60px 20px;
   text-align: center;
@@ -1114,33 +985,28 @@ body {
   margin-bottom: 50px;
 }
 
-/* --- Container Kartu --- */
 .blog-cards-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Jarak antar kartu */
+  gap: 20px;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* --- Gaya Setiap Kartu Blog --- */
 .blog-card {
-  background-color: #ffffff; /* Latar belakang kartu sama dengan section */
-
+  background-color: #ffffff;
   width: 330px;
   text-align: left;
-  /* Tambahkan sedikit transisi pada kartu */
   transition: transform 0.3s ease-in-out;
 }
 
-/* --- Gambar dan Efek Brightness (Gelap ke Cerah) --- */
 .card-image-wrapper {
   width: 100%;
   height: 200px;
   overflow: hidden;
-  border-radius: 8px; /* Sudut sedikit membulat seperti pada gambar */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow ke gambar */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-image-wrapper img {
@@ -1148,21 +1014,15 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-
-  /* KONDISI AWAL: Gambar Gelap (Brightness 50%) */
   filter: brightness(50%);
-
-  /* Transisi untuk efek brightness dan zoom */
   transition: filter 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
-/* KONDISI HOVER: Gambar Cerah */
 .blog-card:hover .card-image-wrapper img {
-  filter: brightness(100%); /* Cerah ke 100% saat hover */
-  transform: scale(1.05); /* Sedikit zoom pada gambar saat hover */
+  filter: brightness(100%);
+  transform: scale(1.05);
 }
 
-/* --- Konten Kartu (Teks) --- */
 .card-content {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1180,34 +1040,25 @@ body {
   color: #555;
   line-height: 1.5;
   margin-bottom: 15px;
-  /* Batasi teks agar tidak terlalu panjang */
   height: 45px;
 }
 
-/* --- Gaya Tombol "READ MORE" --- */
 .read-more-btn {
   display: inline-block;
   font-size: 0.8em;
-  color: #333; /* Warna teks awal hitam/gelap */
+  color: #333;
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 1px;
   padding: 2px 0;
-
-  /* Garis bawah yang awalnya tidak terlihat */
   border-bottom: 2px solid transparent;
-
-  /* Transisi untuk garis bawah dan warna */
   transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Efek Hover pada Tombol "READ MORE" */
 .read-more-btn:hover {
-  color: #b18844; /* Warna cokelat/emas saat hover */
-  border-bottom: 2px solid #b18844; /* Garis bawah muncul saat hover */
+  color: #b18844;
+  border-bottom: 2px solid #b18844;
 }
-
-/* --- Responsif --- */
 
 .blog-section {
   text-align: center;
@@ -1221,20 +1072,16 @@ h1 {
   color: #333;
 }
 
-/* Container untuk Card */
 .blog-container {
   display: flex;
-  flex-wrap: wrap; /* Memastikan responsif pada layar kecil */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Jarak antar card */
+  gap: 20px;
 }
 
-/* Styling untuk setiap Card Blog */
 .blog-card {
-  background-color: #ffffff; /* Latar belakang card putih (meskipun di gambar terlihat seperti latar belakang utama) */
-  width: 300px; /* Lebar standar card */ /* Sedikit bayangan */
-
-  /* Memastikan gambar tidak keluar dari batas */
+  background-color: #ffffff;
+  width: 300px;
 }
 
 .blog-card img {
@@ -1249,8 +1096,8 @@ h1 {
 .card-content {
   padding: 20px 0px 0px;
   text-align: left;
-  background-color: #ffffff; /* Membuat area konten berwarna seperti latar belakang utama */
-  min-height: 150px; /* Tinggi minimal agar konten terlihat konsisten */
+  background-color: #ffffff;
+  min-height: 150px;
 }
 
 .card-content h2 {
@@ -1271,7 +1118,6 @@ h1 {
   width: 390px;
 }
 
-/* Styling Tombol Read More */
 .read-more {
   display: inline-block;
   font-size: 15px;
@@ -1280,20 +1126,13 @@ h1 {
   color: #583722;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
-  /* margin-top: 30px; */
 }
 
-/* Efek Hover untuk Read More */
 .read-more:hover {
-  color: #333; /* Warna sedikit lebih gelap saat dihover */
-  border-bottom: 2px solid #583722; /* Menampilkan garis bawah saat dihover */
+  color: #333;
+  border-bottom: 2px solid #583722;
 }
 
-/* Media Query untuk Responsif */
-/* ======================================= */
-/* MEDIA QUERY UNTUK MOBILE S (Max-width: 320px) */
-/* Memastikan tata letak vertikal satu kolom seperti pada gambar */
-/* ======================================= */
 @media (max-width: 426px) {
   .hero-content,
   .section-header,
@@ -1311,10 +1150,9 @@ h1 {
   .section-header p {
     font-size: 15px;
   }
-  /* --- NAVBAR --- */
   .navbar {
     flex-wrap: wrap;
-    justify-content: center; /* Pusatkan logo dan links */
+    justify-content: center;
     padding: 5px 10px;
   }
   .logo {
@@ -1327,8 +1165,7 @@ h1 {
     display: none;
   }
   .nav-links {
-    width: 100%; /* Ambil lebar penuh */
-    /* Sebar tautan secara merata */
+    width: 100%;
     padding: 5px 0;
     gap: 25px;
   }
@@ -1336,7 +1173,6 @@ h1 {
     font-size: 11px;
   }
 
-  /* --- HERO SECTION --- */
   .hero-header {
     height: 80vh;
   }
@@ -1356,14 +1192,13 @@ h1 {
   .hero-content p {
     font-size: 15px;
     width: 90%;
-    margin: 15px 0px 20px 0px; /* Pusatkan elemen block */
+    margin: 15px 0px 20px 0px;
   }
   .shop-now-btn1 {
     top: 15px;
     padding: 10px 20px;
   }
 
-  /* --- BEST SELLERS SECTION --- */
   .best-sellers-section {
     padding: 40px 0;
   }
@@ -1372,13 +1207,13 @@ h1 {
     padding: 30px 10px;
   }
   .products-container {
-    flex-direction: column; /* MEMAKSA SATU KOLOM */
+    flex-direction: column;
     align-items: center;
     width: 100%;
     gap: 15px;
   }
   .product-card {
-    width: 90%; /* Hampir Penuh */
+    width: 90%;
     margin: 10px auto;
     padding: 15px;
     box-shadow: 10px 20px 1px rgba(0, 0, 0, 0.05);
@@ -1391,14 +1226,13 @@ h1 {
     height: 130px;
   }
   .product-footer {
-    justify-content: space-around; /* Sebar harga dan tombol di bawah kartu */
+    justify-content: space-around;
   }
   .semua-menu {
     margin: 30px auto;
     display: block;
   }
 
-  /* --- DELIVERY/OUR STORY SECTION --- */
   .delivery-section {
     height: auto;
     padding: 40px 15px;
@@ -1416,9 +1250,8 @@ h1 {
     font-size: 16px;
   }
 
-  /* --- SPECIAL SECTION / FEATURES --- */
   .features-container {
-    flex-direction: column; /* MEMAKSA SATU KOLOM */
+    flex-direction: column;
     align-items: center;
     gap: 20px;
   }
@@ -1432,9 +1265,8 @@ h1 {
     font-size: 16px;
   }
 
-  /* --- GALLERY SECTION --- */
   .gallery-section {
-    padding: 30px 0; /* Mengurangi padding vertikal */
+    padding: 30px 0;
   }
 
   .gallery-section .header {
@@ -1442,32 +1274,25 @@ h1 {
   }
 
   .gallery-grid {
-    /* Tetap 2 kolom agar gambar tidak terlalu besar */
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px; /* Mengurangi jarak antar gambar */
-    /* Mengurangi padding horizontal agar grid mengambil lebih banyak ruang */
+    gap: 5px;
     padding: 0 5px;
   }
 
   .gallery-item img {
-    /* Memastikan gambar mengisi penuh item grid */
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   .gallery-grid {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2 KOLOM di mobile sudah cukup padat */
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     padding: 0 5px;
   }
 
-  /* --- TESTIMONIAL & BLOG --- */
   .testimonials-container,
   .blog-container {
-    flex-direction: column; /* MEMAKSA SATU KOLOM */
+    flex-direction: column;
     align-items: center;
     gap: 20px;
   }
@@ -1480,12 +1305,11 @@ h1 {
     height: auto;
   }
 
-  /* --- CONTACT SECTION (FOOTER) --- */
   .contact-section {
     padding: 50px 0;
   }
   .social-links-container {
-    flex-direction: column; /* MEMAKSA SATU KOLOM */
+    flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 0 10%;
